@@ -1,10 +1,8 @@
-const notValid = Error('Valore non valido');
-
 var km = prompt('Inserire numero di km che si intende percorrere');
 // bonus
 if (parseInt(km) != km) {
   alert('Valore non valido');
-  throw 'Valore non valido';
+  throw 'invalid value';
 }
 // /bonus
 // bonus possibilità 2
@@ -20,7 +18,7 @@ var age = prompt('Inserire la propria età');
 // bonus
 if (parseInt(age) != age) {
   alert('Valore non valido');
-  throw 'Valore non valido';
+  throw 'invalid value';
 }
 // /bonus
 // bonus possibilità 2

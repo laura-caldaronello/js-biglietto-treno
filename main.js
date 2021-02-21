@@ -1,20 +1,34 @@
+const notValid = Error('Valore non valido');
+
 var km = prompt('Inserire numero di km che si intende percorrere');
 // bonus
-while (parseInt(km) != km) {
+if (parseInt(km) != km) {
   alert('Valore non valido');
-  var km = prompt('Inserire numero di km che si intende percorrere');
+  throw 'Valore non valido';
 }
 // /bonus
+// bonus possibilità 2
+// while (parseInt(km) != km) {
+//   alert('Valore non valido');
+//   var km = prompt('Inserire numero di km che si intende percorrere');
+// }
+// /bonus possibilità 2
 console.log('km = ' + km);
 console.log(typeof km);
 
 var age = prompt('Inserire la propria età');
 // bonus
-while (parseInt(age) != age) {
+if (parseInt(age) != age) {
   alert('Valore non valido');
-  var age = prompt('Inserire la propria età');
+  throw 'Valore non valido';
 }
 // /bonus
+// bonus possibilità 2
+// while (parseInt(age) != age) {
+//   alert('Valore non valido');
+//   var age = prompt('Inserire la propria età');
+// }
+// /bonus possibilità 2
 console.log('age = ' + age);
 console.log(typeof age);
 

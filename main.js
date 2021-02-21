@@ -1,8 +1,22 @@
-var km = parseInt(prompt('Inserire numero di km che si intende percorrere'));
+var km = prompt('Inserire numero di km che si intende percorrere');
+// bonus
+while (parseInt(km) != km) {
+  alert('Valore non valido');
+  var km = prompt('Inserire numero di km che si intende percorrere');
+}
+// /bonus
 console.log('km = ' + km);
+console.log(typeof km);
 
-var age = parseInt(prompt('Inserire la propria età'));
+var age = prompt('Inserire la propria età');
+// bonus
+while (parseInt(age) != age) {
+  alert('Valore non valido');
+  var age = prompt('Inserire la propria età');
+}
+// /bonus
 console.log('age = ' + age);
+console.log(typeof age);
 
 var discount0 = 0.21 * km;
 console.log('whole price = ' + discount0);
@@ -19,4 +33,7 @@ else if (age > 65) {
 else {
   document.getElementById('yesDiscount').innerHTML = discount0 + ' €';
 }
+
+// bonus
+
 
